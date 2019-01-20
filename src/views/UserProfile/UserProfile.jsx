@@ -34,7 +34,7 @@ class UserProfile extends Component {
                           type: "text",
                           bsClass: "form-control",
                           placeholder: "Company",
-                          defaultValue: "Creative Code Inc.",
+                          defaultValue: "",
                           disabled: true
                         },
                         {
@@ -42,13 +42,13 @@ class UserProfile extends Component {
                           type: "text",
                           bsClass: "form-control",
                           placeholder: "Username",
-                          defaultValue: "michael23"
+                          defaultValue: ""
                         },
                         {
                           label: "Email address",
                           type: "email",
                           bsClass: "form-control",
-                          placeholder: "Email"
+                          placeholder: ""
                         }
                       ]}
                     />
@@ -60,14 +60,14 @@ class UserProfile extends Component {
                           type: "text",
                           bsClass: "form-control",
                           placeholder: "First name",
-                          defaultValue: "Mike"
+                          defaultValue: ""
                         },
                         {
                           label: "Last name",
                           type: "text",
                           bsClass: "form-control",
                           placeholder: "Last name",
-                          defaultValue: "Andrew"
+                          defaultValue: ""
                         }
                       ]}
                     />
@@ -75,41 +75,15 @@ class UserProfile extends Component {
                       ncols={["col-md-12"]}
                       proprieties={[
                         {
-                          label: "Adress",
+                          label: "Position",
                           type: "text",
                           bsClass: "form-control",
-                          placeholder: "Home Adress",
+                          placeholder: "Employee Position",
                           defaultValue:
-                            "Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                            ""
                         }
                       ]}
                     />
-                    <FormInputs
-                      ncols={["col-md-4", "col-md-4", "col-md-4"]}
-                      proprieties={[
-                        {
-                          label: "City",
-                          type: "text",
-                          bsClass: "form-control",
-                          placeholder: "City",
-                          defaultValue: "Mike"
-                        },
-                        {
-                          label: "Country",
-                          type: "text",
-                          bsClass: "form-control",
-                          placeholder: "Country",
-                          defaultValue: "Andrew"
-                        },
-                        {
-                          label: "Postal Code",
-                          type: "number",
-                          bsClass: "form-control",
-                          placeholder: "ZIP Code"
-                        }
-                      ]}
-                    />
-
                     <Row>
                       <Col md={12}>
                         <FormGroup controlId="formControlsTextarea">
@@ -119,7 +93,7 @@ class UserProfile extends Component {
                             componentClass="textarea"
                             bsClass="form-control"
                             placeholder="Here can be your description"
-                            defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
+                            defaultValue=""
                           />
                         </FormGroup>
                       </Col>
@@ -134,17 +108,17 @@ class UserProfile extends Component {
             </Col>
             <Col md={4}>
               <UserCard
-                bgImage="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400"
+                bgImage=""
                 avatar={avatar}
-                name="Mike Andrew"
-                userName="michael24"
+                name=""
+                userName=""
                 description={
                   <span>
-                    "Lamborghini Mercy
+                    "..
                     <br />
-                    Your chick she so thirsty
+                    
                     <br />
-                    I'm in that two seat Lambo"
+                    .."
                   </span>
                 }
                 socials={
